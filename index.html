@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Email Analysis Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Global Email Analysis Tool</h1>
+        <p>IPQualityScore's Email Analysis Tool enables quick user verification and chargeback defense on a global scale by analyzing emails to verify their risk scores, country of origin, carrier, validity, and line connection status while also detecting fraudulent activity in real-time.</p>
+        
+        <form id="emailForm">
+            <label for="email">Enter Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Analysis Result:</h2>
+            <p><strong>Risk Score:</strong> <span id="riskScore"></span></p>
+            <p><strong>Country of Origin:</strong> <span id="country"></span></p>
+            <p><strong>Carrier:</strong> <span id="carrier"></span></p>
+            <p><strong>Validity:</strong> <span id="validity"></span></p>
+            <p><strong>Fraudulent:</strong> <span id="fraudulent"></span></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
